@@ -1,0 +1,359 @@
+.font-type1{ 
+    /* //Heading/ */
+    font-size: calc(3rem + .5vw)!important;
+    font-weight: 700;
+}
+
+.font-type2{ 
+    /* /Subheading 1/ */
+    font-size: calc(2rem + .5vw)!important;
+    font-weight: 700;
+}
+
+.font-type3{
+     /* /Subheading 2/ */
+    font-size: calc(1.5rem + .5vw)!important;
+    font-weight: 700;
+}
+
+.font-type4{ 
+    /* /Subheading 3/ */
+    font-size: calc(1.0rem + .5vw)!important;
+    font-weight: 700;
+}
+
+.font-type5{ 
+    /* /Content font/ */
+    font-size: 1.25rem!important;
+    font-weight: 400;
+}
+
+.font-type6{ 
+    /* /Button font/ */
+    font-size: 1.0rem!important;
+}
+
+@media screen and (max-width: 450px) {
+
+    .font-type5{
+        font-size: 1rem!important;
+    }
+
+    .font-type6{
+        font-size: 0.9rem!important;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .font-type4{
+        font-size: 1rem!important;
+    }
+
+    .font-type5{
+        font-size: 0.9rem!important;
+    }
+}
+
+/* Body Image */
+#body_bg{
+    background-image: url("../images/bg-festival.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* Festival */
+.festival_container{
+   max-height: 1300px;
+}
+.festival_image{
+    max-height: 320px;
+    max-width: 40%;
+    object-fit: cover;
+}
+.flag{
+    max-width: 100px;
+    max-height:80px;
+}
+.activities_img_box1{
+    width: 40%;
+    margin-right: 40px;
+}
+
+.activities_img_box2{
+    width: 50%;
+    margin-right: 40px;
+}
+
+.activities_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    max-height: 600px;
+    filter: grayscale();
+    transition: all 0.4s ease-in-out;
+
+}
+.activities_img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 600px;
+    max-height: 700px;
+    filter: grayscale();
+    transition: all 0.4s ease-in-out;
+}
+.activities_img:hover{
+    filter:none;
+    transform: scale(1.05); 
+}
+.activities_img1:hover{
+    filter:none;
+    transform: scale(1.05); 
+}
+
+/* Activities Images Here */
+/* Chinese New Year */
+#lotus_lantern_parade{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/Lotus_Lantern_Parade.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#exhibition_traditional_lanterns{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/Exhibition_Traditional_Lanterns.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#buddhist_culture_experiences{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/Buddhist_Culture_Experiences.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#grand_ornate_lanterns{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/Grand_Ornate_Lanterns.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.background_bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100%;
+}
+.background_text{
+    padding: 0px 20px;
+}
+/* MoonCake Festival */
+#firework{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/firework.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#deumdol{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/deugi.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#bunfire{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/bonfire.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#torch_lighting{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/torch_lighting.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-color-link{
+    color: #4A8E40;
+}
+
+.text-color-link:hover{
+    color: #C1DF82;
+}
+
+@media screen and (max-width: 992px) {
+    .activities_img_box1, .activities_img_box2{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .activities_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        min-width: 45%;
+        max-width: 45%;
+        min-height: 300px;
+        max-height: 500px;
+    
+    }
+    .activities_img1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        min-width: 45%;
+        max-width: 45%;
+        min-height: 300px;
+        max-height: 500px;
+    }
+    .mr_992{
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .festival_image{
+        max-height: 300px;
+        max-width: 100%;
+    }
+    .activities_img_box1, .activities_img_box2{
+        width: 100%;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+    .activities_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 150px;
+        max-height: 400px;
+    
+    }
+    .activities_img1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 150px;
+        max-height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .activities_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 180px;
+        max-height: 400px;
+    
+    }
+    .activities_img1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 180px;
+        max-height: 400px;
+    }
+}
+
+.previous-pic{
+    background-image:  radial-gradient(   #0000007e, rgba(245, 246, 252, 0)), url('../images/korean.jpg');
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-position: 50% 25%;
+    transition: 1s ease all;
+    background-blend-mode:multiply;
+  }
+
+  .previous-pic:hover{
+    /*background-image: radial-gradient( rgba(245, 246, 252, 0), rgba(245, 246, 252, 0)), url('../images/koreanfestival.jpg');*/
+    
+    background-size: 100%;
+  }
+
+  .previous-text{
+    width: 100%;
+    height: 100px;
+    max-width: 70%;
+    margin: auto;
+  }
+  .previous-text div{
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .previous-text div:hover{
+    transform: scale(1.1);
+  }
+
+  .next-pic{
+    background-image:  radial-gradient( #0000007e, rgba(245, 246, 252, 0) ), url('../images/koreanfood.jpg');
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-position: center;
+    transition: 1s ease all;
+    background-blend-mode:multiply;
+  }
+
+  .next-pic:hover{
+    /*background-image: url('../images/kroeanfood.jpg');*/
+    background-size: 100%;
+  }
+
+  .next-text{
+    width: 100%;
+    height: 100px;
+    max-width: 70%;
+    margin: auto;
+  }
+  .next-text div{
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .next-text div:hover{
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width:700px) {
+    .previous-text{
+        max-width: 100%;
+      }
+      .next-text{
+        max-width: 100%;
+      }
+  }
+  @media screen and (max-width:577px) {
+    .previous-text{
+        max-width: 80%;
+      }
+      .next-text{
+        max-width: 80%;
+      }
+  }
+

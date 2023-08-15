@@ -1,0 +1,271 @@
+/* Body Image */
+#body_bg{
+    background-color: #f8e2e0;
+}
+/* Festival */
+.festival_container{
+   max-height: 1300px;
+}
+.festival_image{
+    max-height: 320px;
+    max-width: 40%;
+    object-fit: cover;
+}
+.flag{
+    max-width: 100px;
+    max-height:80px;
+}
+.activities_img_box{
+    width: 30%;
+    margin-right: 40px;
+}
+.activities_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    max-height: 600px;
+    filter: grayscale();
+    transition: all 0.4s ease-in-out;
+
+}
+.activities_img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 600px;
+    max-height: 700px;
+    filter: grayscale();
+    transition: all 0.4s ease-in-out;
+}
+.activities_img:hover{
+    filter:none;
+    transform: scale(1.05); 
+}
+.activities_img1:hover{
+    filter:none;
+    transform: scale(1.05); 
+}
+
+/* Activities Images Here */
+/* Japanese New Year */
+#house_cleaning{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/dasaocu.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#eve_bell{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/qiaozhong.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#end_party{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/wangnianhui.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#japan_shopping{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/banianhuo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.background_bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100%;
+}
+.background_text{
+    padding: 0px 20px;
+}
+/* Gion Matusuri Festival */
+#shinko_matsuri{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/shinko.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#hanagasa_parade{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/hanagasa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#worship_moon{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/tidengjie.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#tamahoko_parade{
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0), #000000),url("../images/carmoutain.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 992px) {
+    .activities_img_box{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .activities_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        min-width: 45%;
+        max-width: 45%;
+        min-height: 300px;
+        max-height: 500px;
+    
+    }
+    .activities_img1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        min-width: 45%;
+        max-width: 45%;
+        min-height: 300px;
+        max-height: 500px;
+    }
+    .mr_992{
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .festival_image{
+        max-height: 300px;
+        max-width: 100%;
+    }
+    .activities_img_box{
+        width: 100%;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+    .activities_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 180px;
+        max-height: 400px;
+    
+    }
+    .activities_img1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 180px;
+        max-height: 400px;
+    }
+
+}
+
+.reveal-a{
+    position: relative;
+    transform: translateY(120px);
+    opacity: 0;
+    transition: 1.5s all ease;
+  }
+  .reveal-a.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .previous-pic{
+    background-image:  radial-gradient( #0000007e, rgba(245, 246, 252, 0)), url('../images/japan2.jpg');
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-position:center;
+    transition: 1s ease all;
+    background-blend-mode:multiply;
+  }
+  
+  .previous-pic:hover{
+    /*background-image: radial-gradient( rgba(245, 246, 252, 0), rgba(245, 246, 252, 0)), url('../images/koreanfestival.jpg');*/
+    
+    background-size: 100%;
+  }
+  
+  .previous-text{
+    width: 100%;
+    height: 100px;
+    max-width: 70%;
+    margin: auto;
+  }
+  .previous-text div{
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .previous-text div:hover{
+    transform: scale(1.1);
+  }
+  
+  .next-pic{
+    background-image:  radial-gradient( #0000007e, rgba(245, 246, 252, 0) ), url('../images/japanfood.jpg');
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-position: center;
+    transition: 1s ease all;
+    background-blend-mode:multiply;
+  }
+  
+  .next-pic:hover{
+    /*background-image: url('../images/kroeanfood.jpg');*/
+    background-size: 100%;
+  }
+  
+  .next-text{
+    width: 100%;
+    height: 100px;
+    max-width: 70%;
+    margin: auto;
+  }
+  .next-text div{
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .next-text div:hover{
+    transform: scale(1.1);
+  }
+  
+  @media screen and (max-width:700px) {
+    .previous-text{
+        max-width: 100%;
+      }
+      .next-text{
+        max-width: 100%;
+      }
+  }
+  @media screen and (max-width:577px) {
+    .previous-text{
+        max-width: 80%;
+      }
+      .next-text{
+        max-width: 80%;
+      }
+  }

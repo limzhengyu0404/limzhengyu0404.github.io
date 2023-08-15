@@ -1,0 +1,335 @@
+
+.containerhidden{
+  display: none;
+}
+
+.heightlimit{
+  height:200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-bg-color{
+  background: #ba93d8;
+}
+
+.card-bg-color-border{
+  background-color: #ba93d8;
+}
+
+.rowtwo{
+  margin-top: 70px;
+  margin-bottom: 5%;
+}
+
+.queue{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+}
+
+.wordcenter{
+  font-family: Caladea;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.foodname {
+
+  margin-top: 18px;
+}
+
+.linkdecorate{
+  
+  color: black;
+}
+
+.linkdecorate a:active{
+  color: black;
+}
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 308px;
+  height: 160px;
+}
+
+
+
+.box {
+  font-size: 13px;
+  width: 200px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-image: url(../images/foodflip.jpg);
+  background-size: cover;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.font-type4{ 
+	
+    font-size: calc(1.0rem + .5vw)!important;
+    font-weight: 700;
+}
+
+body{
+  max-width: 1800px;
+  background-color: #FCC5C0;
+}
+
+.containerbackcolor{
+  background-color: #FCC5C0;
+}
+
+.fourthback{
+	background-color: #FCC5C0;
+}
+
+.threeitem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  height: 100%;
+}
+input{
+	display: none;
+}
+.imgs{
+	width: 100%;
+	height: 100%;
+  object-fit: cover;
+}
+
+.twobook{
+  margin: 0;
+	padding: 0;
+	height: 650px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Caladea", sans-serif;
+	background: linear-gradient(90deg, #e8A0BF 50%, #ba93d8 50%);
+}
+.book{
+	display: flex;
+}
+#cover{
+	width: 450px;
+	height: 400px;
+}
+.flip-book{
+	width: 450px;
+	height: 400px;
+	position: relative;
+	perspective: 1500px;
+}
+.flip{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: left;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition: .5s;
+	color: #000;
+}
+
+.front{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #E8A0BF;
+	box-sizing: border-box;
+	padding: 0px 30px;
+	box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
+}
+.back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	background: #000;
+}
+.next-btn{
+	position: absolute;
+	bottom: 13px;
+	right: 13px;
+	cursor: pointer;
+	color: #000;
+}
+.back-btn{
+	position: absolute;
+	bottom: 13px;
+	right: 13px;
+	cursor: pointer;
+	color: #000;
+}
+#p1{
+	z-index: 3;
+}
+#p2{
+	z-index: 2;
+}
+
+#c1:checked ~ .flip-book #p1{
+	transform: rotateY(-180deg);
+	z-index: 1;
+}
+#c2:checked ~ .flip-book #p2{
+	transform: rotateY(-180deg);
+	z-index: 2;
+}
+
+
+
+.para1color {
+  background-color: #E8A0BF;
+  
+}
+
+.content-box {
+  max-width: 70%;
+  margin: auto;
+}
+
+.btn-bg-color1{
+  background: #ECD6AC;
+  border: #ECD6AC 3px solid;
+  transition: 0.3s;
+}
+
+.btn-bg-color1:hover{
+  background: #E8A0BF;
+  border: #ECD6AC 3px solid;
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+  .content-box {
+      max-width: 90%;
+  }
+}
+
+
+
+@media screen and (max-width:940px){
+	#cover{
+		width: 340px;
+		height: 360px;
+	}
+	.flip-book{
+		width: 340px;
+		height: 360px;
+		position: relative;
+		perspective: 1500px;
+	}
+}
+
+@media screen and (max-width:1330px){
+  .samurai{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+
+  .content-box {
+      max-width: 80%;
+      margin: auto;
+  }
+}
+
+@media screen and (max-width: 700px){
+	.book{
+    display: none;
+  }
+
+  .containerhidden{
+    display: flex;
+    justify-content: center;
+   
+    
+    }
+  .sixpic{
+    max-width: 307px;
+  }
+
+  .sixpic2{
+    height: 170px;
+    width: 307px;
+  }
+
+  .twobook{
+    height: 600px;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  .content-box {
+      max-width: 90%;
+      margin: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content-box {
+      max-width: 100%;
+      margin: auto;
+  }
+}

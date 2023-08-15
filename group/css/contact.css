@@ -1,0 +1,285 @@
+.displayf-b {
+    display: flex;
+}
+
+.bg-home1 {
+    background-color: #D6E6F2;
+}
+
+.bg-home2 {
+    background-image: url(../images/newera.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #B9D7EA;
+}
+
+.bg-home-malaysia {
+    background-color: #3F94F3;
+}
+
+.bg-home-japan {
+    background-color: #C689C6;
+}
+
+.bg-home-chinese {
+    background-color: #f99100;
+}
+
+.bg-home-korean {
+    background-color: #4A8E40;
+}
+
+.wc-1 {
+    width: 60%;
+}
+
+.wc-2 {
+    width: 40%;
+}
+
+.displayr-l {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .wc-1 {
+        width: 100%;
+    }
+
+    .wc-2 {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    .displayf-b {
+        display: block;
+    }
+}
+
+.button-c {
+    border-radius: 4px;
+    background-color: #000000;
+    border: none;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+.button-c {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-c:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.button-c:hover {
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+.button-c:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.thumbnail-c {}
+
+.picture1-c {
+    animation: fade-in 1.5s;
+}
+
+.picture2-c {
+    display: none;
+}
+
+.thumbnail-c:hover .picture1-c {
+    display: none;
+}
+
+.thumbnail-c:hover .picture2-c {
+    display: block;
+    animation: fade-in 1.5s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.aboutpic img {
+    width: 200px;
+}
+
+.aboutpic>div {
+    margin: 2.5%;
+}
+
+@media screen and (max-width: 700px) {
+
+    .aboutpic img {
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .aboutpic img {
+        width: 120px;
+    }
+
+}
+
+.reveal-c {
+    position: relative;
+    transform: translateY(120px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.reveal-c.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*-----------------------------------CONTACT PAGE---------------------------------------------------*/
+
+
+.form {
+    background-color: #ffffff;
+    width: 35%;
+    align-items:center;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    padding: 3vw;
+    border-radius: 10px;
+}
+
+
+.map_form{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.map_form div{
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.mobile_map{
+    display: none;
+}
+
+textarea {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {   
+
+    .map{
+        display: none;
+    }
+
+    .mobile_map{
+        display: block;
+        width: 100%;
+        height: 400px;
+        margin: auto;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+}
+
+
+.containerbox {
+    background-color: #D6E6F2;
+    display: flex;
+    justify-content: center;
+}
+
+.contactbox {
+    width: 95%;
+    justify-content:space-between;
+    display: flex;
+}
+
+.contactboximg {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.contactbox1 {
+    border:solid #A4C5EA 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin:50px;
+    padding:20px;
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .contactbox {
+        display: block;
+    }
+
+    .contactbox1 {
+        width: 95%;
+        padding:20px;
+        margin: auto;
+    }
+
+    .contactboximg {
+        width: 100%;
+    }
+}
+
+.formbg{
+    background-color: #ace9e8;
+}
+
+.formcolumn{
+    background-color: #ecf4f4;
+}
+
+@media screen and (max-width: 601px){
+    .formbg{
+        margin: 5% auto;
+    }
+
+    .form-bg2{
+        background-color: #ecf4f4;
+    }
+}

@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.101.0">
+  <title>Korean Festival</title>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Caladea' rel='stylesheet'>
+  <!--Fontawesome-->
+  <script src="https://kit.fontawesome.com/db1769a753.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!--css files-->
+  <link rel="stylesheet" href="css/koreanfestival.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+  </script>
+</head>
+
+<!-- Recommended Image Size Between width 500px height 900px -->
+
+<body>
+  <!--Start Nav Bar-->
+  <nav class="navbar navbar-expand-lg nav-color-korean" id="navbar-fixedtop" aria-label="Offcanvas navbar large">
+    <!--change here-->
+    <div class="container-fluid">
+      <a class="navbar-brand background-color-korean font-type5" href="#"> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+        aria-controls="offcanvasNavbar2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-width offcanvas-end nav-color-korean nav-a-link-korean" tabindex="-1"
+        id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <!--<h5 class="offcanvas-title nav-color-home font-type3 text-dark" id="offcanvasNavbar2Label"></h5>-->
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item mx-3">
+              <a class="nav-link font-type5 font-color-korean" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a class="nav-link dropdown-toggle font-type5 font-color-korean" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                CULTURE
+              </a>
+              <ul class="dropdown-menu animated slideInd">
+                <li><a class="dropdown-item font-type5 font-color-korean" href="malaysia.html">Malaysia Culture</a></li>
+                <li><a class="dropdown-item font-type5 font-color-korean" href="japan.html">Japan Culture</a></li>
+                <li><a class="dropdown-item font-type5 font-color-korean" href="chinese.html">Chinese Culture</a></li>
+                <li><a class="dropdown-item font-type5 font-color-korean" href="korean.html">Korean Culture</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link font-type5 font-color-korean" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link font-type5 font-color-korean" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="nav-bookmark-korean">
+      <a href="index.html"><img src="images/icon2.png" alt=""></a>
+    </div>
+  </nav>
+  <!--End Nav Bar-->
+
+  <div class="container-fluid w-100 top-background-korean-festival">
+    <!--here to change the background culture/food/festival-->
+    <div class="container heading-container-korean text-center text-wrap font-type1 fst-italic">
+      Korean Festival
+    </div>
+  </div>
+  <!-- China -->
+  <div id="body_bg" class="container-fluid pt-5 pb-5">
+    <div class="container">
+      <p class="font-type4">South Korea is a diverse and charming nation. Steeped in over 5,000 years of history and
+        tradition, festivals are an important part of South Korean heritage. Many traditional celebrations centre around
+        myths and legends or the changing of the seasons. Ancient traditions practiced by farmers have taken on modern
+        customs, while entirely new festivals have emerged for a new generation to enjoy.</p>
+    </div>
+
+    <!-- Lotus Lantern Festival-->
+    <p class="font-type2 text-center">Lotus Lantern Festival</p>
+    <div class="container-fluid festival_container" data-aos="fade-right" data-aos-duration="3000">
+      <div class="d-flex flex-sm-row flex-column justify-content-around ">
+        <img class="festival_image" src="images/Lotus_Lantern_Festival.jpg" alt="Lotus Lantern Festival">
+        <!-- Accordion -->
+        <div class="accordion d-flex flex-column justify-content-around w-100" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingZero">
+              <button class="accordion-button font-type4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                About
+              </button>
+            </h2>
+            <div id="collapseZero" class="accordion-collapse collapse " aria-labelledby="headingZero"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body font-type5">
+                A festival with a history of over one thousand years that wishs the world happiness and well-being. By
+                lighting lanterns at the Yeon Deung Hoe Festival, participants can brighten their own hearts as well as
+                the world.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed font-type4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Origin
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body font-type5">
+                Its origins date back to Shila Dynasty, where the lantern festival was established to celebrate Buddha's
+                birthday. It continued during the Goryeo Period when Buddhism became the state religion.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed font-type4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Purpose of Celebrate
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body font-type5">
+                The Lotus Lantern Festival is an annual event that colors Korea with bright lanterns in celebration of
+                the birth of Buddha. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed font-type4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Date
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body font-type5">
+                The Date of the festival changes every year as it opens through the weekend right before the Buddha’s
+                birthday on 8th April by lunar calendar. In 2023, YeonDeungHoe( Lotus Lantern Festival) will be held on
+                19th(Fri.)~ 21st(Sun), May. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed font-type4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Offical Website
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body font-type5">
+                Here is the Korean offical website, you can see more information at <a href="http://www.llf.or.kr/eng/"
+                  target="_blank" class="text-color-link">this website</a>. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Activities -->
+    <!-- Image are added through css with background image -->
+    <p class="font-type2 text-center pt-5">Activities</p>
+    <div class="container-fluid d-flex flex-sm-column flex-lg-row flex-column justify-content-center mb-5"
+      data-aos="fade-right" data-aos-duration="2000">
+      <div
+        class="d-flex flex-lg-column justify-content-lg-start flex-sm-row justify-content-sm-center flex-column activities_img_box1">
+        <div class="activities_img1 mr_992 mb-lg-5 mb-sm-0 mb-5" id="lotus_lantern_parade">
+          <!-- id for background image can change if u want, remember to change the jquery below if make any changes-->
+          <p class="font-type3 text-center" id="activity1">Lotus Lantern Parade</p>
+          <!-- id can change if u want, remember to change the jquery below if make any changes-->
+          <div class="background_bg">
+            <p class="font-type3 background_text">Lotus Lantern Parad</p>
+            <p class="font-type4 background_text">Starting from Dongguk University Stadium at 7 PM, the procession
+              slowly moves to
+              Jongno Street, where multitudes of spectators are lined up along the street to witness the colorful
+              parade.</p>
+          </div>
+        </div>
+        <div class="activities_img" id="exhibition_traditional_lanterns">
+          <p class="font-type3 text-center" id="activity2">Exhibition Traditional Lanterns</p>
+          <div class="background_bg">
+            <p class="font-type3 background_text">Exhibition Traditional Lanterns</p>
+            <p class="font-type4 background_text">Lanterns made out of traditional Korean hanji paper will be displayed
+              at Jogyesa,
+              Bongeunsa, and on Cheonggyecheon Stream. </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-lg-column justify-content-lg-start flex-sm-row justify-content-sm-center flex-column activities_img_box2">
+        <div class="activities_img mr_992 mb-lg-5 mb-sm-0 mb-5" id="buddhist_culture_experiences">
+          <p class="font-type3 text-center" id="activity3">Buddhist Culture Experiences</p>
+          <div class="background_bg">
+            <p class="font-type3 background_text">Buddhist Culture Experiences</p>
+            <p class="font-type4 background_text">We can learn how to make your own paper lantern, do Buddhist prayer
+              bead bracelets,
+              paint bowls, learn about Korean Buddhism history, and join dance lessons. There are unique experiences
+              designed for kids as well.</p>
+          </div>
+        </div>
+        <div class="activities_img1" id="grand_ornate_lanterns">
+          <p class="font-type3 text-center" id="activity4">Grand Ornate Lanterns</p>
+          <div class="background_bg">
+            <p class="font-type3 background_text">Grand Ornate Lanterns</p>
+            <p class="font-type4 background_text">A special highlight of the parade is the display of the grand ornate
+              lanterns, which
+              are beautifully decorated and vary in size. There are tigers, elephants, various dragons, turtle ship
+              boats, the figures of the Four Heavenly Kings, famous pagodas, even modern popular characters.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Jeju Fire Festival-->
+    <p class="font-type2 text-center">Jeju Fire Festival</p>
+    <div class="container-fluid festival_container">
+      <div class="d-flex flex-sm-row flex-column justify-content-center">
+        <img class="festival_image" src="images/jeju_fire.jpg" alt="Jeju Fire">
+        <!-- Accordion -->
+        <div class="accordion d-flex flex-column justify-content-around w-100" id="accordionExample1">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwelve">
+              <button class="accordion-button font-type4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                About
+              </button>
+            </h2>
+            <div id="collapseTwelve" class="accordion-collapse collapse " aria-labelledby="headingTwelve"
+              data-bs-parent="#accordionExample1">
+              <div class="accordion-body font-type5">
+                The Jeongwol Daeboreum Field-Burning Festival, also known as the Jeju Fire Festival, has secured its
+                position as one of the major festivals representing Jeju. It will light up Jeju with the theme: “Using
+                fire to spread the message of hope out into space.”
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed font-type4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                Origin
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample1">
+              <div class="accordion-body font-type5">
+                The festival’s roots come from a tradition called “bangae,” which is to burn down the fields during the
+                time between late winter and early spring. This renews the greens and exterminates vermin before the
+                horses and cows are set free on the fields to graze.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed font-type4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Purpose of Celebrate
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample1">
+              <div class="accordion-body font-type5">
+                This festival celebrates the arrival of Spring and symbolises the time for South Koreans to pray for a
+                good harvest and good health in the coming year. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed font-type4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Date
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+              data-bs-parent="#accordionExample1">
+              <div class="accordion-body font-type5">
+                The festival runs for four days, starting on the first Thursday in March.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button class="accordion-button collapsed font-type4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Offical Website
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+              data-bs-parent="#accordionExample1">
+              <div class="accordion-body font-type5">
+                Here is the Korean offical website, you can see more information at <a
+                  href="https://www.jejusi.go.kr/buriburi/main.do" target="_blank" class="text-color-link">this
+                  website</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Activities -->
+    <p class="font-type2 text-center mt-5">Activities</p>
+    <div class="container-fluid d-flex flex-sm-column flex-lg-row flex-column justify-content-center">
+      <div
+        class="d-flex flex-lg-column justify-content-lg-start flex-sm-row justify-content-sm-center flex-column activities_img_box2">
+        <div class="activities_img mr_992 mb-lg-5 mb-sm-0 mb-5" id="firework">
+          <p class="font-type3 p-4" id="activity5">Fireworks</p>
+          <div class="background_bg">
+            <p class="font-type3 background_text">Fireworks</p>
+            <p class="font-type4 background_text">Firework displays events have all helped to transform this ancient
+              festival for modern day revellers and also make this event successfully end.</p>
+          </div>
+        </div>
+        <div class="activities_img1" id="torch_lighting">
+          <p class="font-type3 text-center p-4" id="activity8">Torch Relay</p>
+          <div class="background_bg">
+            <p class="font-type3 background_text">Torch Relay</p>
+            <p class="font-type4 background_text">This activiti mean “The Hopeful Rejuvenation of Fire Spreads
+              Throughout the World“. The torch relay will moves across the length of the island. The relay ends when
+              organizers set ablaze a huge, 82-acres field of oreum (a parasitic volcano)</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-lg-column justify-content-lg-start flex-sm-row justify-content-sm-center flex-column activities_img_box1">
+        <div class="activities_img1 mr_992 mb-lg-5 mb-sm-0 mb-5" id="bunfire">
+          <p class="font-type3 p-4" id="activity7">Large Bonfire</p>
+          <div class="background_bg">
+            <p class="font-type3 background_text">Large Bonfire</p>
+            <p class="font-type4 background_text"> The highlight of this ethereal festival is the burning of the daljip,
+              or ‘moon houses.’ These large bonfire structures made from pine tree branches and other logs were
+              traditionally set alight in line with the rising of the full moon. </p>
+          </div>
+        </div>
+        <div class="activities_img" id="deumdol">
+          <p class="font-type3 p-4" id="activity6">Deumdole</p>
+          <div class="background_bg">
+            <p class="font-type3 background_text">Deumdol</p>
+            <p class="font-type4 background_text">In the deumdol-deugi contest entrants tested their strength by seeing
+              who could carry the heaviest stone the longest distance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="d-flex flex-sm-row flex-column">
+    <a href="korean.html" class="col-sm-6 col-12 previous-pic text-decoration-none">
+      <!--"previous-pic" are added through css with background image-->
+      <div class="text-center d-grid previous-text">
+        <div class="d-flex justify-content-evenly align-items-center text-white">
+          <i class="fa-solid fa-angles-left font-type3"></i>
+          <p class="font-type3 m-0 ">Korean Culture</p>
+        </div>
+      </div>
+    </a>
+    <a href="koreanfood.html" class="col-sm-6 col-12 next-pic text-decoration-none">
+      <!--"next-pic" are added through css with background image-->
+      <div class="text-center d-grid next-text">
+        <div class=" d-flex justify-content-evenly align-items-center text-white">
+          <p class="font-type3 m-0 ">Korean Food</p>
+          <i class="fa-solid fa-angles-right font-type3"></i>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!--Footer-->
+  <footer class="text-center text-lg-start text-dark bg-color-footer-korean pt-5">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-type3 text-dark">
+              Hello World
+            </h6>
+            <p class="font-type5 text-dark">
+              We are group of student who organizing this website, for the use of our subject, hope you will like our
+              project!
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none text-dark" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-type3 text-dark">
+              Quick Link
+            </h6>
+            <p>
+              <a href="index.html" class="font-type5 text-dark text-decoration-none">Home</a>
+            </p>
+            <p>
+              <a href="about.html" class="font-type5 text-dark text-decoration-none">About Us</a>
+            </p>
+            <p>
+              <a href="contact.html" class="font-type5 text-dark text-decoration-none">Contact Us</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none text-dark" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-dark">
+            <h6 class="text-uppercase mb-4 font-type3">Contact Us</h6>
+            <p class="font-type5"><i class="fas fa-home mr-3"></i>Kajang, 43000, Malaysia</p>
+            <p class="font-type5"><i class="fas fa-envelope mr-3"></i><a href="mailto:helloworld-culture@gmail.com"
+                class="text-decoration-none text-dark"> helloworld-culture@gmail.com</a></p>
+            <p class="font-type5"><i class="fas fa-phone mr-3"></i><a href="tel:+60-137272328"
+                class="text-decoration-none text-dark"> +60-137272328</a></p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3 text-dark">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center text-dark">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2022 Copyright
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Google -->
+            <a href="https://github.com/limzhengyu0404/limzhengyu0404.github.io" target="_blank"
+              class="btn btn-outline-dark btn-floating m-1" class="text-dark" role="button"><i
+                class="fa-brands fa-github"></i></a>
+
+            <!-- Instagram -->
+            <a href="https://www.facebook.com/lim.sheyong.965" target="_blank"
+              class="btn btn-outline-dark btn-floating m-1" class="text-dark" role="button"><i
+                class="fa-brands fa-facebook"></i></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Animation when scroll -->
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".background_bg").hide(); // (.background_bg) no need change,other class and id (#house_cleaning , #activity1)can change to suit your id 
+
+
+      //For House Cleaning to show info when click
+      $("#lotus_lantern_parade").click(function () {
+        $("#activity1").hide();
+        $(".background_bg", this).toggle('slide', { direction: 'right' }, 1000, function () {
+          if ($("#lotus_lantern_parade .background_bg").is(':visible')) {
+            $("#activity1").hide();
+          }
+          else {
+            $("#activity1").show();
+          }
+        });
+      })
+
+
+
+      $("#exhibition_traditional_lanterns").click(function () {
+        $("#activity2").hide();
+        $(".background_bg", this).toggle('slide', { direction: 'right' }, 1000, function () {
+          if ($("#exhibition_traditional_lanterns .background_bg").is(':visible')) {
+            $("#activity2").hide();
+          }
+          else {
+            $("#activity2").show();
+          }
+        });
+      })
+
+      $("#buddhist_culture_experiences").click(function () {
+        $("#activity3").hide();
+        $(".background_bg", this).toggle('slide', { direction: 'right' }, 1000, function () {
+          if ($("#buddhist_culture_experiences .background_bg").is(':visible')) {
+            $("#activity3").hide();
+          }
+          else {
+            $("#activity3").show();
+          }
+        });
+      })
+
+      $("#grand_ornate_lanterns").click(function () {
+        $("#activity4").hide();
+        $(".background_bg", this).toggle('slide', { direction: 'right' }, 1000, function () {
+          if ($("#grand_ornate_lanterns .background_bg").is(':visible')) {
+            $("#activity4").hide();
+          }
+          else {
+            $("#activity4").show();
+          }
+        });
+      })
+
+      $("#firework").click(function () {
+        $("#activity5").hide();
+        $(".background_bg", this).toggle('slide', { direction: 'right' }, 1000, function () {
+          if ($("#firework .background_bg").is(':visible')) {
+            $("#activity5").hide();
+          }
+          else {
+            $("#activity5").show();
+          }
+        });
+      })
+
+      $("#deumdol").click(function () {
+        $("#activity6").hide();
+        $(".background_bg", this).toggle('slide', { direction: 'right' }, 1000, function () {
+          if ($("#deumdol .background_bg").is(':visible')) {
+            $("#activity6").hide();
+          }
+          else {
+            $("#activity6").show();
+          }
+        });
+      })
+
+      $("#bunfire").click(function () {
+        $("#activity7").hide();
+        $(".background_bg", this).toggle('slide', { direction: 'right' }, 1000, function () {
+          if ($("#bunfire .background_bg").is(':visible')) {
+            $("#activity7").hide();
+          }
+          else {
+            $("#activity7").show();
+          }
+        });
+      })
+
+      $("#torch_lighting").click(function () {
+        $("#activity8").hide();
+        $(".background_bg", this).toggle('slide', { direction: 'right' }, 1000, function () {
+          if ($("#torch_lighting .background_bg").is(':visible')) {
+            $("#activity8").hide();
+          }
+          else {
+            $("#activity8").show();
+          }
+        });
+      })
+
+    })
+  </script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar-fixedtop").style.top = "0";
+      } else {
+        document.getElementById("navbar-fixedtop").style.top = "-150px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+</body>
+
+</html>

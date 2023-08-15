@@ -1,0 +1,17 @@
+.submitcontaner {
+    background-color: #f8f8f8;
+}
+
+.submitcontaner img {
+    width: 500px;
+}
+
+.gobackbtn {
+    background-color: #c2e3fe;
+    color: dodgerblue;
+}
+
+.gobackbtn:hover {
+    background: #2196F3;
+    color: white;
+}

@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HELLOWORLD</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/db1769a753.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!--css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--Start Nav Bar-->
+    <nav class="navbar navbar-expand-lg nav-color-home" id="navbar-fixedtop" aria-label="Offcanvas navbar large">
+        <!--change here-->
+        <div class="container-fluid">
+            <a class="navbar-brand background-color-home font-type5" href="#"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                aria-controls="offcanvasNavbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-width offcanvas-end nav-color-home nav-a-link" tabindex="-1"
+                id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <!--<h5 class="offcanvas-title nav-color-home font-type3 text-dark" id="offcanvasNavbar2Label"></h5>-->
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link font-type5 font-color-home" aria-current="page"
+                                href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle font-type5 font-color-home" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                CULTURE
+                            </a>
+                            <ul class="dropdown-menu animated slideInd">
+                                <li><a class="dropdown-item font-type5 font-color-home" href="malaysia.html">Malaysia
+                                        Culture</a></li>
+                                <li><a class="dropdown-item font-type5 font-color-home" href="japan.html">Japan
+                                        Culture</a></li>
+                                <li><a class="dropdown-item font-type5 font-color-home" href="chinese.html">Chinese
+                                        Culture</a></li>
+                                <li><a class="dropdown-item font-type5 font-color-home" href="korean.html">Korean
+                                        Culture</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link font-type5 font-color-home" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link font-type5 font-color-home" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bookmark">
+            <a href="index.html"><img src="images/icon2.png" alt="HelloWorld logo"></a>
+        </div>
+    </nav>
+    <!--End Nav Bar-->
+
+    <div class="container-fluid w-100 top-background-home">
+        <div class="container heading-container text-center text-wrap font-type1 fst-italic">
+            HELLO WORLD
+        </div>
+    </div>
+    <!--End of top container-->
+
+    <!--Home Container1-->
+    <div class="container-fluid displayf-b p-5">
+        <div class="container-fluid w-100 m-auto">
+            <p class="font-type3">What is Culture</p>
+            <p class="font-type5">Culture is considered a central concept in anthropology, encompassing the range of
+                phenomena that are transmitted through social learning in human societies. Cultural universals are found
+                in all human societies.</p>
+        </div>
+        <div class="container-fluid w-100">
+            <div><img src="images/worldmap.jpg" alt="WorldMap dark" class="w-100"></div>
+        </div>
+    </div>
+
+    <!--Home Container2-->
+    <div class="container-fluid p-0 px-0 bg-home1">
+        <!--Malaysia card-->
+        <div class="card mb-5 bg-home-malaysia shadow rounded reveal-c">
+            <div class="row g-0">
+                <div class="col-md-4 wc-1">
+                    <img src="images/malaysia.jpg" class="rounded-start w-100" alt="Songkran in Malaysia">
+                </div>
+                <div class="col-md-8 wc-2 m-auto">
+                    <div class="card-body">
+                        <div><img src="images/mf.png" alt="Malaysia Flag"></div>
+                        <h5 class="font-type3">Malaysia Culture</h5>
+                        <p class="font-type5">Malaysia is a multi-cultural society. The main ethnic groups are the
+                            native
+                            Malays as well as large populations of Chinese, and Indians. When visiting the country it is
+                            clear that the ethnicities retain their religions, customs and way of life.
+                        </p>
+                        <button class="button-c"><a href="malaysia.html"
+                                class="text-decoration-none text-light font-type6">Read
+                                More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Japan card-->
+        <div class="card mb-5 ms-auto bg-home-japan shadow rounded reveal-c">
+            <div class="row g-0 displayr-l">
+                <div class="col-md-4 wc-1">
+                    <img src="images/japan2.jpg" class="rounded-start w-100"
+                        alt="Kyoto Nightime with two girl wearing kimono">
+                </div>
+                <div class="col-md-8 wc-2 m-auto">
+                    <div class="card-body">
+                        <div><img src="images/jf.png" alt="Japan flag"></div>
+                        <h5 class="font-type3">Japan Culture</h5>
+                        <p class="font-type5">The culture of Japan has changed greatly over the millennia, from the
+                            country's prehistoric Jōmon period, to its contemporary modern culture, which absorbs
+                            influences from Asia and other regions of the world.
+                        </p>
+                        <button class="button-c"><a href="japan.html"
+                                class="text-decoration-none text-light font-type6">Read
+                                More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Chinese card-->
+        <div class="card mb-5 bg-home-chinese shadow rounded reveal-c">
+            <div class="row g-0">
+                <div class="col-md-4 wc-1">
+                    <img src="images/china.jpg" class="rounded-start w-100" alt="Celebrating Chinese New Year in China">
+                </div>
+                <div class="col-md-8 wc-2 m-auto">
+                    <div class="card-body">
+                        <div><img src="images/cf.png" alt="China flag"></div>
+                        <h5 class="font-type3">Chinese Culture</h5>
+                        <p class="font-type5">Chinese culture is one of the world's oldest cultures, originating
+                            thousands of years ago. The culture prevails across a large geographical region in East Asia
+                            and is extremely diverse and varying.
+                        </p>
+                        <button class="button-c"><a href="chinese.html"
+                                class="text-decoration-none text-light font-type6">Read
+                                More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Korean card-->
+        <div class="card mb-5 ms-auto bg-home-korean shadow rounded reveal-c">
+            <div class="row g-0 displayr-l">
+                <div class="col-md-4 wc-1">
+                    <img src="images/korean.jpg" class="rounded-start w-100" alt="Korean traditional dance">
+                </div>
+                <div class="col-md-8 wc-2 m-auto">
+                    <div class="card-body">
+                        <div><img src="images/kf.png" alt="Korean flag"></div>
+                        <h5 class="font-type3">Korean Culture</h5>
+                        <p class="font-type5">The Korean peninsula, consisting of North and South Korea, is one of the
+                            most homogeneous regions in the world. Meaning that almost everyone residing in any part of
+                            the region is ethnically Korean.
+                        </p>
+                        <button class="button-c"><a href="korean.html"
+                                class="text-decoration-none text-light font-type6">Read
+                                More</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About container-->
+    <div class="container-fluid d-block bg-home2 py-5 reveal-c">
+        <div class="d-block px-5">
+            <p class="font-type3">About Us</p>
+            <p class="font-type5">Who are we? We are student who came from New Era University College.</p>
+            <button class="button-c"><a href="about.html" class="text-decoration-none text-light font-type6">Read
+                    More</a></button>
+        </div>
+        <div class="aboutpic w-100 d-flex flex-wrap justify-content-evenly">
+            <div><img src="images/people1.png" alt="LimZhengYu photo"></div>
+            <div><img src="images/people2.png" alt="TanZhenXun photo"></div>
+            <div><img src="images/people3.png" alt="TanWeiHao photo"></div>
+            <div><img src="images/people4.png" alt="SiaCheeKang photo"></div>
+            <div><img src="images/people5.png" alt="WongJingYi photo"></div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="text-center text-lg-start text-dark bg-color-footer-home">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-type3 text-dark">
+                            Hello World
+                        </h6>
+                        <p class="font-type5 text-dark">
+                            We are group of student who organizing this website, for the use of our subject, hope you
+                            will like our
+                            project!
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none text-dark" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-type3 text-dark">
+                            Quick Link
+                        </h6>
+                        <p>
+                            <a href="index.html" class="font-type5 text-dark text-decoration-none">Home</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="font-type5 text-dark text-decoration-none">About Us</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="font-type5 text-dark text-decoration-none">Contact Us</a>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none text-dark" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-dark">
+                        <h6 class="text-uppercase mb-4 font-type3">Contact Us</h6>
+                        <p class="font-type5"><i class="fas fa-home mr-3"></i> Kajang, 43000, Malaysia</p>
+                        <p class="font-type5"><i class="fas fa-envelope mr-3"></i><a
+                                href="mailto:helloworld-culture@gmail.com" class="text-decoration-none text-dark">
+                                 helloworld-culture@gmail.com</a></p>
+                        <p class="font-type5"><i class="fas fa-phone mr-3"></i><a href="tel:+60-137272328"
+                                class="text-decoration-none text-dark"> +60-137272328</a></p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-3 text-dark">
+
+            <!-- Section: Copyright -->
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center text-dark">
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8 text-center text-md-start">
+                        <!-- Copyright -->
+                        <div class="p-3">
+                            © 2022 Copyright
+                        </div>
+                        <!-- Copyright -->
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                        <!-- Google -->
+                        <a href="https://github.com/limzhengyu0404/limzhengyu0404.github.io" target="_blank"
+                            class="btn btn-outline-dark btn-floating m-1" class="text-dark" role="button"><i
+                                class="fa-brands fa-github"></i></a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.facebook.com/lim.sheyong.965" target="_blank" class="btn btn-outline-dark btn-floating m-1"
+                            class="text-dark" role="button"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+            </section>
+            <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar-fixedtop").style.top = "0";
+            } else {
+                document.getElementById("navbar-fixedtop").style.top = "-150px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal-c");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+
+</body>
+
+</html>

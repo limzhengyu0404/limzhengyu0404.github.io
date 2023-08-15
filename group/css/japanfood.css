@@ -1,0 +1,232 @@
+
+
+.font-type4{ 
+	
+    font-size: calc(1.0rem + .5vw)!important;
+    font-weight: 700;
+}
+
+body{
+  max-width: 1800px;
+  background-color: #FCC5C0;
+}
+
+.font-type2 {
+  /*Subheading 1*/
+  font-size: calc(2rem + .5vw) !important;
+  font-weight: 700;
+}
+
+.font-type3 {
+  /*Subheading 2*/
+  font-size: calc(1.5rem + .5vw) !important;
+  font-weight: 700;
+}
+
+.font-type5 {
+  /*Content font*/
+  font-size: 1.25rem !important;
+  font-weight: 400;
+}
+
+.font-type6 {
+  /*Button font*/
+  font-size: 1.0rem !important;
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+  .font-type5 {
+      font-size: 1rem !important;
+  }
+
+  .font-type6 {
+      font-size: 0.9rem !important;
+  }
+}
+
+
+.content-box{
+  margin: auto;
+  max-width: 70%;
+}
+
+.box-bg-color1{
+  background: linear-gradient(90deg,rgb(232, 160, 191) 0%,rgb(232, 160, 191) 72%,rgba(255,255,255,0) 72%,rgba(255,255,255,0) 100%);
+}
+
+.box-bg-color2{
+  background: linear-gradient(270deg,rgb(232, 160, 191) 0%,rgb(232, 160, 191) 72%,rgba(255,255,255,0) 72%,rgba(255,255,255,0) 100%);
+}
+
+.picture-size{
+  max-width: 100%;
+}
+
+.picture-size img{
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+/*Can change the image shadow*/
+
+.shadow1{
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.334);
+}
+
+.shadow2{
+  box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.334);
+}
+
+.shadow3{
+  box-shadow: -10px 10px  5px rgba(0, 0, 0, 0.334);
+}
+
+.shadow4{
+  box-shadow: -10px -10px  5px rgba(0, 0, 0, 0.334);
+}
+
+
+@media screen and (max-width:1250px){
+  .content-box{
+      margin: auto;
+      max-width: 80%;
+  }
+}
+
+@media screen and (max-width:1100px){
+  .content-box{
+      margin: auto;
+      max-width: 90%;
+  }
+}
+
+@media screen and (max-width:900px){
+  .content-box{
+      margin: auto;
+      max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .box-bg-color1, .box-bg-color2{
+      background: linear-gradient(360deg,rgb(232, 160, 191) 0%,rgb(232, 160, 191) 80%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%);
+  }
+
+  .picture-size img{
+      width: 70vw;
+      height: 40vh;
+  }
+
+  .shadow1, .shadow2, .shadow3, .shadow4{
+      box-shadow: 0px 0px 5px 5px  rgba(0, 0, 0, 0.334);
+  }
+  /*    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.334);    */
+}
+
+@media screen and (max-width: 575px){
+  .picture-size img{
+      width: 70%;
+      height: 25vh;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  .box-bg-color1, .box-bg-color2{
+      background: linear-gradient(360deg,rgb(232, 160, 191) 0%,rgb(232, 160, 191) 85%,rgba(255,255,255,0) 85%,rgba(255,255,255,0) 100%);
+  }
+  .picture-size img{
+      width: 90%;
+      height: 25vh;
+      object-fit: cover;
+  }
+}
+
+.reveal-a{
+  position: relative;
+  transform: translateY(120px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal-a.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.previous-pic{
+  background-image:  radial-gradient( #0000007e, rgba(245, 246, 252, 0)), url('../images/japan2.jpg');
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position:center;
+  transition: 1s ease all;
+  background-blend-mode:multiply;
+}
+
+.previous-pic:hover{
+  /*background-image: radial-gradient( rgba(245, 246, 252, 0), rgba(245, 246, 252, 0)), url('../images/koreanfestival.jpg');*/
+  
+  background-size: 100%;
+}
+
+.previous-text{
+  width: 100%;
+  height: 100px;
+  max-width: 70%;
+  margin: auto;
+}
+.previous-text div{
+  transition: all 0.5s ease-in-out;
+}
+
+.previous-text div:hover{
+  transform: scale(1.1);
+}
+
+.next-pic{
+  background-image:  radial-gradient( #0000007e, rgba(245, 246, 252, 0) ), url('../images/japanfestival.jpg');
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center;
+  transition: 1s ease all;
+  background-blend-mode:multiply;
+}
+
+.next-pic:hover{
+  /*background-image: url('../images/kroeanfood.jpg');*/
+  background-size: 100%;
+}
+
+.next-text{
+  width: 100%;
+  height: 100px;
+  max-width: 70%;
+  margin: auto;
+}
+.next-text div{
+  transition: all 0.5s ease-in-out;
+}
+
+.next-text div:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width:700px) {
+  .previous-text{
+      max-width: 100%;
+    }
+    .next-text{
+      max-width: 100%;
+    }
+}
+@media screen and (max-width:577px) {
+  .previous-text{
+      max-width: 80%;
+    }
+    .next-text{
+      max-width: 80%;
+    }
+}

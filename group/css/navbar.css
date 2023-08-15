@@ -1,0 +1,897 @@
+body {
+  font-family: 'Caladea', sans-serif;
+  margin: auto;
+  max-width: 1800px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.navbar {
+  margin-bottom: 20px;
+  margin: auto;
+  max-width: 1800px;
+}
+
+.font-type1{ /*Heading*/
+  font-size: calc(3rem + .5vw)!important;
+  font-weight: 700;
+}
+
+.font-type2{ /*Subheading 1*/
+  font-size: calc(2rem + .5vw)!important;
+  font-weight: 700;
+}
+
+.font-type3{ /*Subheading 2*/
+  font-size: calc(1.5rem + .5vw)!important;
+  font-weight: 700;
+}
+
+.font-type4{ /*Subheading 3*/
+  font-size: calc(1.0rem + .5vw)!important;
+  font-weight: 700;
+}
+
+.font-type5{ /*Content font*/
+  font-size: 1.25rem!important;
+  font-weight: 400;
+}
+
+.font-type6{ /*Button font*/
+  font-size: 1.0rem!important;
+}
+
+@media screen and (max-width: 450px) {
+
+  .font-type5{
+      font-size: 1.1rem!important;
+  }
+
+  .font-type6{
+      font-size: 1rem!important;
+  }
+}
+
+/*Navi Part*/
+#navbar-fixedtop{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 1s;
+}
+
+/*navi-home*/
+.nav-bookmark img{
+  position: absolute;
+  left: 4vw;
+  top: 0px;
+  width: calc(11rem + .5vw)!important;
+  transition: 0.5s;
+  background-color: #3672B5;
+  padding: 35px 15px 30px 15px; /*top right bottom left*/
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(40, 40, 41, 0.334);
+}
+
+.nav-bookmark img:hover{
+  background-color: #13d7d4;
+}
+
+.nav-color-home{
+  background-color: #F6F5F5;
+  color: #3672B5;
+}
+
+.font-color-home{
+  color: #3672B5;
+  font-weight: 600;
+}
+
+.background-color-home{
+  color: #F6F5F5;
+}
+
+.dropdown-transition{
+  transition: 0.5s;
+}
+
+.nav-a-link a {
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    #13d7d4,
+    #13d7d4 50%,
+    #3672B5 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a-link a:before{
+  content: '';
+  background: #13d7d4;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a-link a:hover {
+ background-position: 0;
+}
+
+.nav-a-link a:hover::before{
+  width: 100%;
+}
+
+.offcanvas-width{
+  --bs-offcanvas-width: 40vw;
+}
+
+.bg-color-footer-home{
+  background-color: #769FCD;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu{ display: none; }
+  .navbar .nav-item:hover .dropdown-menu{ display: block; }
+  .navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+@media all and (max-width: 992px){
+
+  .nav-bookmark img{
+    width: calc(9rem + .5vw)!important;
+    padding: 35px 15px 30px 15px; /*top right bottom left*/
+  }
+
+  .offcanvas-width{
+    --bs-offcanvas-width: 35vw;
+  }
+  
+}
+
+@media all and (max-width: 768px){
+
+  .nav-bookmark img{
+    width: calc(8rem + .5vw)!important;
+    padding: 30px 10px 30px 10px; /*top right bottom left*/
+  }
+
+  .offcanvas-width{
+    --bs-offcanvas-width: 40vw;
+  }
+  
+}
+
+@media all and (max-width: 768px){
+
+  .offcanvas-width{
+    --bs-offcanvas-width: 50vw;
+  }
+  
+}
+
+@media all and (max-width: 550px) {
+
+  .nav-bookmark img{
+    width: calc(7rem + .5vw)!important;
+    padding: 25px 8px 25px 8px; /*top right bottom left*/
+  }
+
+  .offcanvas-width{
+    --bs-offcanvas-width: 60vw;
+  }
+  
+}
+
+@media all and (max-width: 370px){
+
+  .offcanvas-width{
+    --bs-offcanvas-width: 70vw;
+  }
+  
+}
+
+/*Drop down magic*/
+@media (min-width: 100px) {
+  .animated {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideInd {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+/*Top Heading container*/
+
+.top-background-home{
+  background-image: url(../images/worldmapbackground.jpg);
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.heading-container{
+  background-color: #F6F5F5;
+  color: #3672B5;
+  word-wrap: normal;
+  width: 50%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 540px){
+  .heading-container{
+    margin-top: 20%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .heading-container{
+    margin-top: 30%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+/*----------------------------Korean-------------------------------------------------------------------*/
+/*navi-home*/
+.nav-bookmark-korean img{
+  position: absolute;
+  left: 4vw;
+  top: 0px;
+  width: calc(11rem + .5vw)!important;
+  transition: 0.5s;
+  background-color: #4A8E40;
+  padding: 35px 15px 30px 15px; /*top right bottom left*/
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(40, 40, 41, 0.334);
+}
+
+.nav-bookmark-korean img:hover{
+  background-color: #C1DF82;
+}
+
+.nav-color-korean{
+  background-color: #F6F5F5;
+  color: #4A8E40;
+}
+
+.font-color-korean{
+  color: #4A8E40;
+  font-weight: 600;
+}
+
+.nav-a-link-korean a {
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    #C1DF82,
+    #C1DF82 50%,
+    #4A8E40 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a-link-korean a:before{
+  content: '';
+  background: #C1DF82;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a-link-korean a:hover {
+ background-position: 0;
+}
+
+.nav-a-link-korean a:hover::before{
+  width: 100%;
+}
+
+.bg-color-footer-korean{
+  background-color: #4A8E40;
+}
+
+@media all and (max-width: 992px){
+
+  .nav-bookmark-korean img{
+    width: calc(9rem + .5vw)!important;
+    padding: 35px 15px 30px 15px; /*top right bottom left*/
+  }
+}
+
+@media all and (max-width: 768px){
+
+  .nav-bookmark-korean img{
+    width: calc(8rem + .5vw)!important;
+    padding: 30px 10px 30px 10px; /*top right bottom left*/
+  }
+}
+
+
+@media all and (max-width: 550px) {
+
+  .nav-bookmark-korean img{
+    width: calc(7rem + .5vw)!important;
+    padding: 25px 8px 25px 8px; /*top right bottom left*/
+  }
+}
+
+.top-background-korean-culture{
+  background-image: url(../images/korean.jpg);
+  background-position: 55% 30%;
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.top-background-korean-food{
+  background-image: url(../images/koreanfood.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.top-background-korean-festival{
+  background-image: url(../images/koreanfestival.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.heading-container-korean{
+  background-color: #F6F5F5;
+  color: #4A8E40;
+  word-wrap: normal;
+  width: 50%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 540px){
+  .heading-container-korean{
+    margin-top: 20%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .heading-container-korean{
+    margin-top: 30%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+/*----------------------------Chinese-------------------------------------------------------------------*/
+/*navi-home*/
+.nav-bookmark-chinese img{
+  position: absolute;
+  left: 4vw;
+  top: 0px;
+  width: calc(11rem + .5vw)!important;
+  transition: 0.5s;
+  background-color: #f99100;
+  padding: 35px 15px 30px 15px; /*top right bottom left*/
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(40, 40, 41, 0.334);
+}
+
+.nav-bookmark-chinese img:hover{
+  background-color: #ff0000;
+}
+
+.nav-color-chinese{
+  background-color: #F6F5F5;
+  color: #f99100;
+}
+
+.font-color-chinese{
+  color: #f99100;
+  font-weight: 600;
+}
+
+.nav-a-link-chinese a {
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    #ff0000,
+    #ff0000 50%,
+    #f99100 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a-link-chinese a:before{
+  content: '';
+  background: #ff0000;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a-link-chinese a:hover {
+ background-position: 0;
+}
+
+.nav-a-link-chinese a:hover::before{
+  width: 100%;
+}
+
+.bg-color-footer-chinese{
+  background-color: #f99100;
+}
+
+@media all and (max-width: 992px){
+
+  .nav-bookmark-chinese img{
+    width: calc(9rem + .5vw)!important;
+    padding: 35px 15px 30px 15px; /*top right bottom left*/
+  }
+}
+
+@media all and (max-width: 768px){
+
+  .nav-bookmark-chinese img{
+    width: calc(8rem + .5vw)!important;
+    padding: 30px 10px 30px 10px; /*top right bottom left*/
+  }
+}
+
+
+@media all and (max-width: 550px) {
+
+  .nav-bookmark-chinese img{
+    width: calc(7rem + .5vw)!important;
+    padding: 25px 8px 25px 8px; /*top right bottom left*/
+  }
+}
+
+.top-background-chinese-culture{
+  background-image: url(../images/china.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.top-background-chinese-food{
+  background-image: url(../images/chinesefood.jpg);
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.top-background-chinese-festival{
+  background-image: url(../images/chinese-culture-cover.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.heading-container-chinese{
+  background-color: #F6F5F5;
+  color: #f99100;
+  word-wrap: normal;
+  width: 50%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 540px){
+  .heading-container-chinese{
+    margin-top: 20%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .heading-container-chinese{
+    margin-top: 30%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+/*----------------------------Malaysia-------------------------------------------------------------------*/
+/*navi-home*/
+.nav-bookmark-malaysia img{
+  position: absolute;
+  left: 4vw;
+  top: 0px;
+  width: calc(11rem + .5vw)!important;
+  transition: 0.5s;
+  background-color: #3F94F3;
+  padding: 35px 15px 30px 15px; /*top right bottom left*/
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(40, 40, 41, 0.334);
+}
+
+.nav-bookmark-malaysia img:hover{
+  background-color: #131aeb;
+}
+
+.nav-color-malaysia{
+  background-color: #F6F5F5;
+  color: #7FB5FF;
+}
+
+.font-color-malaysia{
+  color: #7FB5FF;
+  font-weight: 600;
+}
+
+.nav-a-link-malaysia a {
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    #131aeb,
+    #131aeb 50%,
+    #3F94F3 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a-link-malaysia a:before{
+  content: '';
+  background: #131aeb;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a-link-malaysia a:hover {
+ background-position: 0;
+}
+
+.nav-a-link-malaysia a:hover::before{
+  width: 100%;
+}
+
+.bg-color-footer-malaysia{
+  background-color: #3F94F3;
+}
+
+@media all and (max-width: 992px){
+
+  .nav-bookmark-malaysia img{
+    width: calc(9rem + .5vw)!important;
+    padding: 35px 15px 30px 15px; /*top right bottom left*/
+  }
+}
+
+@media all and (max-width: 768px){
+
+  .nav-bookmark-malaysia img{
+    width: calc(8rem + .5vw)!important;
+    padding: 30px 10px 30px 10px; /*top right bottom left*/
+  }
+}
+
+
+@media all and (max-width: 550px) {
+
+  .nav-bookmark-malaysia img{
+    width: calc(7rem + .5vw)!important;
+    padding: 25px 8px 25px 8px; /*top right bottom left*/
+  }
+}
+
+.top-background-malaysia-culture{
+  background-image: url(../images/malaysiaday.jpg);
+  background-position: bottom;
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.top-background-malaysia-food{
+  background-image: url(../images/malaysiafood.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.top-background-malaysia-festival{
+  background-image: url(../images/malaysia.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.heading-container-malaysia{
+  background-color: #F6F5F5;
+  color: #7FB5FF;
+  word-wrap: normal;
+  width: 50%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 540px){
+  .heading-container-malaysia{
+    margin-top: 20%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .heading-container-malaysia{
+    margin-top: 30%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+/*----------------------------Japan-------------------------------------------------------------------*/
+/*navi-home*/
+.nav-bookmark-japan img{
+  position: absolute;
+  left: 4vw;
+  top: 0px;
+  width: calc(11rem + .5vw)!important;
+  transition: 0.5s;
+  background-color: #C689C6;
+  padding: 35px 15px 30px 15px; /*top right bottom left*/
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(40, 40, 41, 0.334);
+}
+
+.nav-bookmark-japan img:hover{
+  background-color: #ff00bf;
+}
+
+.nav-color-japan{
+  background-color: #F6F5F5;
+  color: #C689C6;
+}
+
+.font-color-japan{
+  color: #C689C6;
+  font-weight: 600;
+}
+
+.nav-a-link-japan a {
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    #ff00bf,
+    #ff00bf 50%,
+    #C689C6 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a-link-japan a:before{
+  content: '';
+  background: #ff00bf;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a-link-japan a:hover {
+ background-position: 0;
+}
+
+.nav-a-link-japan a:hover::before{
+  width: 100%;
+}
+
+.bg-color-footer-japan{
+  background-color: #C689C6;
+}
+
+@media all and (max-width: 992px){
+
+  .nav-bookmark-japan img{
+    width: calc(9rem + .5vw)!important;
+    padding: 35px 15px 30px 15px; /*top right bottom left*/
+  }
+}
+
+@media all and (max-width: 768px){
+
+  .nav-bookmark-japan img{
+    width: calc(8rem + .5vw)!important;
+    padding: 30px 10px 30px 10px; /*top right bottom left*/
+  }
+}
+
+
+@media all and (max-width: 550px) {
+
+  .nav-bookmark-japan img{
+    width: calc(7rem + .5vw)!important;
+    padding: 25px 8px 25px 8px; /*top right bottom left*/
+  }
+}
+
+.top-background-japan-culture{
+  background-image: url(../images/japan2.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.top-background-japan-food{
+  background-image: url(../images/japanfood.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.top-background-japan-festival{
+  background-image: url(../images/japanfestival.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10% 5%;
+}
+
+.heading-container-japan{
+  background-color: #F6F5F5;
+  color: #C689C6;
+  word-wrap: normal;
+  width: 50%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 540px){
+  .heading-container-japan{
+    margin-top: 20%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .heading-container-japan{
+    margin-top: 30%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
